@@ -42,14 +42,11 @@
   document.addEventListener('DOMContentLoaded', function() {
     console.log('p')
     
-    // for (var i = 0; i < 4000000; i++) {
-    //   console.log(i);
-    // }
+    for (var i = 0; i < 4000000; i++) {
+      console.log(i);
+    }
     history.pushState(null, null, document.title);
     window.addEventListener('popstate', function () {history.pushState(null, null, document.title);});
-
-    var c = new Audio('./p.mp3');
-    c.play();
   })
 </script>
 </html>
